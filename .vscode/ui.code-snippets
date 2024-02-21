@@ -1,0 +1,37 @@
+{
+  // Place your mtd-client app workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // To generate snippet of your code go to https://snippet-generator.app/
+  // Example:
+  "Creates a new page with title and subtitle": {
+    "prefix": "mtd-page-new",
+    "body": [
+      "<Page",
+      "    title=\"${1:Projects}\"",
+      "    subTitle=\"${2:Manage your projects}\"",
+      "    primaryAction={",
+      "        <Button",
+      "        variant=\"contained\"",
+      "        onClick={() => showCreateModal(true)}",
+      "        >${3:New record}</Button>",
+      "    }",
+      "    >",
+      "    <p>Page content</p>",
+      "</Page>"
+    ],
+    "description": "Creates a new page with title and subtitle"
+  },
+  "Creates a new page title (HEAD)": {
+    "prefix": "mtd-page-title",
+    "body": [
+      "import { generateMetaData } from \"@/utils/page-utils\";",
+      "",
+      "export const metadata = generateMetaData(\"${1:Your page title}\");"
+    ],
+    "description": "Creates a new page title (HEAD)"
+  }
+}

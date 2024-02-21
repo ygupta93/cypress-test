@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.autohide": false,
+  "cSpell.words": ["Timesheet"],
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": false
+}

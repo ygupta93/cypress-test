@@ -1,0 +1,53 @@
+/* @tailwind base; - reason -> conflicting with MUI */
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+html,
+body {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.static-date-picker-container
+  .hide-select-date
+  > div.MuiPickersToolbar-root
+  > span.MuiTypography-root {
+  display: none;
+}
+
+.static-date-picker-container .hide-select-date > div.MuiDialogActions-root {
+  display: none;
+}
+
+.hide-placeholder > div.MuiInputBase-root {
+  border: none;
+}
+
+.perfect-scrollbar-container * {
+  scrollbar-width: thin;
+  scrollbar-color: #858585 #e8e8e8;
+}
+
+.perfect-scrollbar-container *::-webkit-scrollbar {
+  width: 10px;
+}
+
+.perfect-scrollbar-container *::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+
+.perfect-scrollbar-container *::-webkit-scrollbar-thumb {
+  background-color: #858585;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
+.quillEditor-added > div.ql-toolbar {
+  display: none;
+}
