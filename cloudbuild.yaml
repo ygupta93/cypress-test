@@ -1,0 +1,10 @@
+steps:
+  # Step 3: Run Cypress tests step with Yarn
+  - name: 'cypress/included:4.11.0'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        ls -lart
+        yarn install
+        yarn test:e2e
