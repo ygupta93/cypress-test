@@ -1,0 +1,17 @@
+steps:
+  # Single step to merge to main branch
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        git config --global user.email "ygupta@connectingpointstech.com"
+        git config --global user.name "Yash Gupta"
+        git fetch origin && \
+        git checkout main && \
+        git merge --allow-unrelated-histories origin/qa && \
+        git push origin main
+        
+
+options:
+    logging: CLOUD_LOGGING_ONLY
