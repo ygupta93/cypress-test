@@ -5,11 +5,8 @@ steps:
     args:
       - '-c'
       - |
-        git branch
-        git remote -v
-        #git checkout main &&
-        #git merge qa &&
-        #git push origin main
+        git merge qa &&
+        git push origin master
 
 options:
     logging: CLOUD_LOGGING_ONLY
