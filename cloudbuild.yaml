@@ -5,9 +5,10 @@ steps:
     args:
       - '-c'
       - |
-        git checkout main &&
-        git merge qa &&
-        git push origin main
+        git branch
+        #git checkout main &&
+        #git merge qa &&
+        #git push origin main
 
 options:
     logging: CLOUD_LOGGING_ONLY
