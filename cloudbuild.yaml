@@ -6,6 +6,7 @@ steps:
       - '-c'
       - |
         git branch
+        git remote -v
         #git checkout main &&
         #git merge qa &&
         #git push origin main
