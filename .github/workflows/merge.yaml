@@ -1,0 +1,21 @@
+on:
+  pull_request:
+      types:
+        - opened
+        - synchronize
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Merge Branch
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout main
+          git merge --no-ff ${{ github.event.pull_request.head.ref }}
+          git push origin main
