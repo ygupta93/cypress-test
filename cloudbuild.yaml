@@ -10,7 +10,7 @@ steps:
         git fetch origin && \
         git checkout main && \
         git merge --allow-unrelated-histories origin/qa && \
-        git push origin main
+        git push git@github.com:ygupta93/cypress-test.git HEAD:main
         
 
 options:
