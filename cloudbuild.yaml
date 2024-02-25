@@ -5,7 +5,7 @@ steps:
     args:
       - '-c'
       - |
-        curl -X POST -H 'Authorization: token ${_GITHUB_TOKEN}' -H' 'Accept: application/vnd.github.v3+json' 'https://api.github.com/repos/ygupta93/cypress-test/pulls' -d '{"title":"Cloud Build Automated Pull Request","body":"This is an automated pull request from Cloud Build to merge the code from qa branch to main.","head":"qa","base":"main"}'
+        curl -X POST -H 'Authorization: token ${_GITHUB_TOKEN}' -H 'Accept: application/vnd.github.v3+json' 'https://api.github.com/repos/ygupta93/cypress-test/pulls' -d '{"title":"Cloud Build Automated Pull Request","body":"This is an automated pull request from Cloud Build to merge the code from qa branch to main.","head":"qa","base":"main"}'
 
 options:
     logging: CLOUD_LOGGING_ONLY
